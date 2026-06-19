@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAD: Origin Story — A Father's Day Comic Tribute</title>
+<meta name="description" content="A comic-book tribute to dads, everywhere.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bangers&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Lora:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="label">Vol. I &middot; No. 06</span>
+    <span class="label">Father&rsquo;s Day Special</span>
+  </div>
+</header>
+
+<main>
+  <!-- ============ COVER ============ -->
+  <section class="cover" id="top">
+    <div class="burst" aria-hidden="true"></div>
+    <div class="wrap cover-inner">
+      <span class="label">Featuring: One Ordinary Dad</span>
+      <h1 class="shout">Dad</h1>
+      <p class="sub">Origin Story</p>
+      <div class="caption-box">The world&rsquo;s most underrated superhero. No cape required &mdash; though he&rsquo;d probably wear one if you asked.</div>
+      <a href="#origin" class="scroll-cue">Turn the page &darr;</a>
+
+      <nav class="toc" aria-label="Sections">
+        <a href="#powers"><span class="num">Issue Pg. 3</span><span class="t">Powers &amp; Abilities</span></a>
+        <a href="#levels"><span class="num">Issue Pg. 5</span><span class="t">Power Levels</span></a>
+        <a href="#catchphrase"><span class="num">Issue Pg. 7</span><span class="t">Catchphrases</span></a>
+        <a href="#letter"><span class="num">Issue Pg. 8</span><span class="t">The Letter</span></a>
+        <a href="#fanmail"><span class="num">Issue Pg. 9</span><span class="t">Fan Mail</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ============ ORIGIN ============ -->
+  <section id="origin">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Page One</span>
+        <h2>How It Began</h2>
+      </div>
+      <div class="origin-grid">
+        <div class="origin-panel"><span class="tag">Before</span><p>Just an ordinary guy. No spotlight, no soundtrack, no idea what was coming.</p></div>
+        <div class="origin-panel"><span class="tag">The Moment</span><p>A tiny voice said &ldquo;Dad&rdquo; for the first time. Powers activated instantly. No training required.</p></div>
+        <div class="origin-panel"><span class="tag">Ever Since</span><p>Still on duty. Still answering every call, every time, no questions asked.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POWERS ============ -->
+  <section class="powers" id="powers">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Page Three &middot; As Documented By His Family</span>
+        <h2>Powers &amp; Abilities</h2>
+      </div>
+      <div class="powers-grid">
+        <div class="power-card"><div class="power-badge">&#9889;</div><h3>Second Sight</h3><p>Knows you&rsquo;re lying about your grades from clear across the room.</p></div>
+        <div class="power-card"><div class="power-badge">&#128176;</div><h3>Unlimited Storage</h3><p>Wallet holds every receipt since 2004 &mdash; and somehow, exactly the right amount of cash.</p></div>
+        <div class="power-card"><div class="power-badge">&#128295;</div><h3>Instant Repair</h3><p>Fixes squeaky doors, wobbly tables, and bruised egos. Tools optional.</p></div>
+        <div class="power-card"><div class="power-badge">&#128506;</div><h3>Sonic Navigation</h3><p>Finds the way with no GPS, no asking, and never once admitting he&rsquo;s unsure.</p></div>
+        <div class="power-card"><div class="power-badge">&#128170;</div><h3>Morale Boost</h3><p>One sentence from him and the whole week suddenly feels manageable.</p></div>
+        <div class="power-card"><div class="power-badge">&#128164;</div><h3>Stealth Mode</h3><p>Falls asleep mid-movie without anyone catching the exact second it happened.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POWER LEVELS ============ -->
+  <section class="levels" id="levels">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Page Five</span>
+        <h2>Rate His Power Level</h2>
+        <p class="section-intro">Enter his years of active duty. Watch the meters fill &mdash; they rarely do this for anyone else.</p>
+      </div>
+      <div class="levels-box">
+        <div class="levels-form">
+          <div class="field">
+            <label for="yearsInput">Years on duty</label>
+            <input type="number" id="yearsInput" min="0" max="80" placeholder="e.g. 25">
+          </div>
+          <button class="btn" id="runLevels" type="button">Calculate power level</button>
+        </div>
+
+        <div class="meter">
+          <div class="meter-top"><span class="name">Humor</span><span class="pct" data-pct="humor">0%</span></div>
+          <div class="meter-track"><div class="meter-fill" data-fill="humor"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-top"><span class="name">Patience</span><span class="pct" data-pct="patience">0%</span></div>
+          <div class="meter-track"><div class="meter-fill" data-fill="patience"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-top"><span class="name">Navigation</span><span class="pct" data-pct="nav">0%</span></div>
+          <div class="meter-track"><div class="meter-fill" data-fill="nav"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-top"><span class="name">Strength</span><span class="pct" data-pct="strength">0%</span></div>
+          <div class="meter-track"><div class="meter-fill" data-fill="strength"></div></div>
+        </div>
+        <div class="meter">
+          <div class="meter-top"><span class="name">Wisdom</span><span class="pct" data-pct="wisdom">0%</span></div>
+          <div class="meter-track"><div class="meter-fill" data-fill="wisdom"></div></div>
+        </div>
+        <p class="levels-note">Readings calibrated generously in his favor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATCHPHRASE ============ -->
+  <section class="catchphrase" id="catchphrase">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label" style="color:var(--yellow);">Page Seven</span>
+        <h2>Activate His Catchphrase</h2>
+        <p class="section-intro" style="opacity:.9;">Every hero has a signature line. Tap to hear his.</p>
+      </div>
+      <div class="cp-layout">
+        <div class="cp-figure">
+          <svg viewBox="0 0 220 290" aria-hidden="true">
+            <path d="M150,55 C112,135 64,195 22,225 C92,205 142,165 162,105 Z" fill="var(--blue)" stroke="var(--ink)" stroke-width="4"></path>
+            <line x1="112" y1="110" x2="90" y2="150" stroke="var(--ink)" stroke-width="11" stroke-linecap="round"></line>
+            <line x1="90" y1="150" x2="100" y2="175" stroke="var(--ink)" stroke-width="11" stroke-linecap="round"></line>
+            <circle cx="100" cy="175" r="11" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"></circle>
+            <line x1="128" y1="212" x2="118" y2="268" stroke="var(--ink)" stroke-width="12" stroke-linecap="round"></line>
+            <line x1="172" y1="212" x2="182" y2="268" stroke="var(--ink)" stroke-width="12" stroke-linecap="round"></line>
+            <rect x="108" y="92" width="84" height="118" rx="36" ry="36" fill="var(--paper)" stroke="var(--ink)" stroke-width="5"></rect>
+            <circle cx="150" cy="148" r="20" fill="var(--yellow)" stroke="var(--ink)" stroke-width="4"></circle>
+            <text x="150" y="156" text-anchor="middle" font-family="Archivo Black" font-size="20" fill="var(--ink)">D</text>
+            <line x1="188" y1="110" x2="213" y2="72" stroke="var(--ink)" stroke-width="11" stroke-linecap="round"></line>
+            <line x1="213" y1="72" x2="208" y2="46" stroke="var(--ink)" stroke-width="11" stroke-linecap="round"></line>
+            <circle cx="208" cy="46" r="11" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"></circle>
+            <circle cx="150" cy="55" r="42" fill="var(--paper)" stroke="var(--ink)" stroke-width="5"></circle>
+            <path d="M120,46 h60 a6,6 0 0 1 6,6 v6 h-72 v-6 a6,6 0 0 1 6,-6 z" fill="var(--ink)"></path>
+            <circle cx="132" cy="54" r="5" fill="var(--paper)"></circle>
+            <circle cx="168" cy="54" r="5" fill="var(--paper)"></circle>
+            <path d="M135,72 Q150,80 165,72" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="bubble" id="cpBubble">Tap the button. He&rsquo;s got a line ready.</div>
+          <div class="cp-actions"><button class="btn" id="cpBtn" type="button">Activate catchphrase</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE LETTER ============ -->
+  <section class="letter" id="letter">
+    <div class="wrap">
+      <div class="letter-wrap">
+        <span class="label letter-kicker">Page Eight &middot; Off The Record</span>
+        <h2 class="letter-title">For the man<br>who <em>made us</em></h2>
+        <div class="letter-rule" aria-hidden="true"></div>
+        <div class="letter-body">
+          <p>You were the first voice that told me the world was worth meeting. The first hands that held me like I mattered &mdash; before I&rsquo;d done a single thing to deserve it.</p>
+          <p>You taught me to shake a hand and mean it. To lose without falling apart. To show up &mdash; not for applause, not for credit, just because that&rsquo;s what love does when no one&rsquo;s watching.</p>
+          <p>I see it now, in the silences you kept so I could speak. In the worries you carried so mine could feel small. In the way you made ordinary mornings feel like something worth waking up for.</p>
+          <p>I carry you in the way I face the world.<br>And I am grateful &mdash; more than I&rsquo;ll ever say out loud.</p>
+          <p class="letter-thanks">Thank you, Dad.</p>
+        </div>
+        <p class="letter-sign">With love</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAN MAIL ============ -->
+  <section class="fanmail" id="fanmail">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Page Nine</span>
+        <h2>Write His Fan Mail</h2>
+        <p class="section-intro">Every hero deserves mail from an adoring fan. Draft yours below.</p>
+      </div>
+      <div class="fm-grid">
+        <form class="fm-form" id="cardForm">
+          <div class="field">
+            <label for="dadName">His hero name</label>
+            <input type="text" id="dadName" placeholder="Dad, Papa, Appa, Baba&hellip;">
+          </div>
+          <div class="field">
+            <label for="dadMsg">Your message</label>
+            <textarea id="dadMsg" placeholder="Thank you for&hellip;"></textarea>
+          </div>
+          <div class="fm-actions">
+            <button class="btn" id="stampBtn" type="submit">Stamp &amp; preview</button>
+            <button class="btn btn-dark" id="downloadBtn" type="button">Download fan mail</button>
+          </div>
+        </form>
+        <div class="card-stage">
+          <div class="card-canvas-wrap">
+            <canvas id="cardCanvas" width="1000" height="650" aria-label="Fan mail card preview"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2 class="shout">To Be Continued&hellip;</h2>
+    <p class="sub">Happy Father&rsquo;s Day.</p>
+    <p class="indicia" id="indicia">This tribute published for Father&rsquo;s Day. No portion of this dad may be reproduced without his permission &mdash; which he will grant immediately, because he&rsquo;s proud of you.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
